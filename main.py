@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
 import os
-TOKEN = '7079443660:AAGexMMOkYsjsMXOHUF_Bvv010U0l_YE56Q'
+TOKEN = os.environ.get('BOT_TOKEN')
 ADMIN_ID = 369934680  # замени на свой числовой Telegram ID
 GROUP_INVITE_LINK = 'https://t.me/+1C7TGihz-q45NmFi'  # ссылка на группу
 
