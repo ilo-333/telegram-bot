@@ -1,13 +1,14 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
+import os
 TOKEN = '7079443660:AAGexMMOkYsjsMXOHUF_Bvv010U0l_YE56Q'
 ADMIN_ID = 369934680  # замени на свой числовой Telegram ID
-GROUP_INVITE_LINK = 'https://t.me/vagmafiaua'  # ссылка на группу
+GROUP_INVITE_LINK = 'https://t.me/+1C7TGihz-q45NmFi'  # ссылка на группу
 
 # Команда /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Для вступления в группу, отправь нам, пожалуйста, фото своей машины.")
+    await update.message.reply_text("Для вступления в группу, отправь нам, пожалуйста, фото своей машины, где видно номера.")
 
 # Обработка фото
 async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
